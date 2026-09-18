@@ -1,0 +1,16 @@
+# 提案格式示例，不是可直接执行的命令。占位值须在实例化时替换。
+operation_id: "{{uuid}}"
+operation: update_section
+target_id: "{{note_uuid}}"
+target_path: "10-Projects/example/INDEX.md"
+target_section: "当前状态"
+precondition_sha256: "{{hash_of_exact_old_file_bytes}}"
+agent_id: "{{local_agent_id}}"
+created_at: "{{iso_datetime}}"
+status: proposed
+sources:
+  - "{{verified_source_path_or_uri}}"
+reason: "已验证阶段结果，需要更新当前状态。"
+replacement_markdown: |
+  {{完整的新段落内容}}
+# apply 时还需单写入器、每文件结果与回执；此文件不提供事务保证。

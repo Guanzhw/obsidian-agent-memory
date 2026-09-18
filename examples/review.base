@@ -1,0 +1,44 @@
+filters:
+  and:
+    - 'file.ext == "md"'
+    - '!file.inFolder("90-System")'
+    - '!file.inFolder("80-Archive")'
+properties:
+  note.type:
+    displayName: 类型
+  note.status:
+    displayName: 状态
+  note.review_after:
+    displayName: 复核日期
+views:
+  - type: table
+    name: 待处理
+    filters:
+      or:
+        - 'status == "draft"'
+        - 'status == "conflicted"'
+    order:
+      - file.name
+      - type
+      - status
+      - updated_at
+  - type: table
+    name: 活跃项目
+    filters:
+      and:
+        - 'type == "project"'
+        - 'status == "active"'
+    order:
+      - file.name
+      - updated_at
+  - type: table
+    name: 到期复核
+    filters:
+      and:
+        - 'status == "active"'
+        - 'review_after'
+        - 'date(review_after) <= today()'
+    order:
+      - file.name
+      - type
+      - review_after
