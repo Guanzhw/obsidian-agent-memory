@@ -15,11 +15,11 @@
 - `examples/review.base`：Bases 视图示例；只展示结构化字段，不等同自动审核。
 - `examples/update-operation.yaml`：操作信封示例，未附执行器。
 
-> **2026-11-24 修订**：operation executor、索引与检索升级均不采用；读写记忆用基础文件工具。检索规格的唯一权威位置是 vault `90-System/specs/search.md`，本包不复制第二份。设计正文对应章节已就地标注。
+> **2026-11-24 修订**：operation executor 与索引不采用；读写记忆用基础文件工具。检索规格的唯一权威位置是 vault `90-System/specs/search.md`，本包不复制第二份。阶段 C 的检索对比尚未执行（未决），设计正文对应章节已就地标注。
 
 本包不包含自动部署脚本、MCP server、记忆写入器、索引服务或定时任务；也未复制用户历史个人信息。
 
-交付检查已核对 Markdown/HTML 结构、模板必填字段以及 JSON/YAML 可解析性。未在你的 Obsidian、Windows 或 agent 运行时执行；Bases 表达式与自动化行为需要本地验收。HTML 不依赖外部资源。
+交付检查已核对 Markdown/HTML 结构、模板必填字段以及 JSON/YAML 可解析性。vault 侧部署与验收由 `D:\ObsidianRepo` 的项目记录承载；本包本身不含运行时实现。
 
 推荐实施顺序：备份与盘点 → 一个项目试点 → 全局入口 → 三会话恢复/更正测试 → 确定性校验 → 按实际遗漏试点检索增强。
 
