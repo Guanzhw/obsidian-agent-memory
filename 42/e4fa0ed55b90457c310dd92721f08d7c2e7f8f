@@ -1,0 +1,23 @@
+Obsidian-memory-design.md
+  s_77d222add47ec1::t_4011f03f0a6f1c 6,20,37,39,47,234
+  s_77d222add47ec1::t_df621b5235c557 10,16,244,249-251,254
+  s_77d222add47ec1::t_907581c3666c68 369,371,373-375
+specs/acceptance-cases.md
+  s_77d222add47ec1::t_78f79968fb0cc8 3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "10.11.1",
+  "base_commit_sha": "42e4fa0ed55b90457c310dd92721f08d7c2e7f8f",
+  "prompts": {},
+  "sessions": {
+    "s_77d222add47ec1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20c7b-73ca-72d0-b6b0-5984c0f45aca",
+        "model": "deepseek-flash"
+      },
+      "human_author": "g00943418 <guanzhaowei@huawei.com>"
+    }
+  }
+}
