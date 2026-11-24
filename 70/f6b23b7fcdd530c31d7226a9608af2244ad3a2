@@ -1,0 +1,19 @@
+Obsidian-memory-design.md
+  s_77d222add47ec1::t_25f3e9701b242e 264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "10.11.1",
+  "base_commit_sha": "70f6b23b7fcdd530c31d7226a9608af2244ad3a2",
+  "prompts": {},
+  "sessions": {
+    "s_77d222add47ec1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20c7b-73ca-72d0-b6b0-5984c0f45aca",
+        "model": "deepseek-flash"
+      },
+      "human_author": "Guanzhw <51082584+Guanzhw@users.noreply.github.com>"
+    }
+  }
+}
