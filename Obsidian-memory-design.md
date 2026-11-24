@@ -261,7 +261,7 @@ MOC 是加速入口，不是唯一通路。搜索不到时要跨主题回退；�
 
 **在代码仓库中工作：** 当前目录仍是项目 repo；全局指令只放简短的记忆入口和触发条件，按需读取 vault 的项目笔记。不要为了记忆而把所有 coding 会话都改到 vault 根运行。
 
-> **2026-11-24 修订**：实际只接入 OpenCode。Codex 侧接入（全局 AGENTS 记忆块 + SessionStart hook）已于 2026-10-10 由用户裁决撤销，Codex 使用原生 memories；`C:\Users\g00943418\.codex\hooks.json` 与 hook 脚本均已改名 `.bak`。OpenCode 侧则从「全局入口 + 按需读取」进一步演化为插件自动注入：会话开始与每次压缩后注入 vault `AGENTS.md` + `HOME.md` + 匹配项目的 INDEX（截断 6000 字符），并注册 `memory.status` / `memory.inject` 两个只读诊断工具。机制与已知限制见 vault `90-System/integrations/opencode/obsidian-memory/README.md`。
+> **2026-11-24 修订**：实际只接入 OpenCode。Codex 侧接入（全局 AGENTS 记忆块 + SessionStart hook）已于 2026-10-10 由用户裁决撤销，Codex 使用原生 memories；`%USERPROFILE%\.codex\hooks.json` 与 hook 脚本均已改名 `.bak`。OpenCode 侧则从「全局入口 + 按需读取」进一步演化为插件自动注入：会话开始与每次压缩后注入 vault `AGENTS.md` + `HOME.md` + 匹配项目的 INDEX（截断 6000 字符），并注册 `memory.status` / `memory.inject` 两个只读诊断工具。机制与已知限制见 vault `90-System/integrations/opencode/obsidian-memory/README.md`。
 
 Codex 官方指令发现规则区分全局和当前项目路径；任意旁边目录的 `AGENTS.md` 不会仅因存在就成为全局记忆入口。[Codex 官方说明](https://developers.openai.com/codex/guides/agents-md/)
 
