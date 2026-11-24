@@ -1,3 +1,6 @@
+# 2026-11-24 裁决不采用此方案（无执行器、无 operation ID、无 hash 前置条件）。保留仅为设计史；
+# 现行写入流程见 D:\ObsidianRepo\AGENTS.md「写入」与 Obsidian-memory-design.md §5.2。
+#
 # 提案格式示例，不是可直接执行的命令。占位值须在实例化时替换。
 operation_id: "{{uuid}}"
 operation: update_section
