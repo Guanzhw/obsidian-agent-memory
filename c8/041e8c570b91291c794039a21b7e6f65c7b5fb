@@ -1,0 +1,19 @@
+README.md
+  s_77d222add47ec1::t_e0508411844eb3 18,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "10.11.1",
+  "base_commit_sha": "c8041e8c570b91291c794039a21b7e6f65c7b5fb",
+  "prompts": {},
+  "sessions": {
+    "s_77d222add47ec1": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a20c7b-73ca-72d0-b6b0-5984c0f45aca",
+        "model": "deepseek-flash"
+      },
+      "human_author": "g00943418 <guanzhaowei@huawei.com>"
+    }
+  }
+}
